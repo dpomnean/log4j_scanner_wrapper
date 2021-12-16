@@ -7,3 +7,6 @@ Scans most suspecting main directories and will exclude nfs mounts.
 Usage
 ```
 bash log4j_scanner.sh [optional_java_path]
+```
+
+Written by Andrew Pomnean, and Matt Cengic.
