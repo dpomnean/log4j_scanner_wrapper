@@ -1,0 +1,12 @@
+---
+- hosts: servers
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Run log4j scanner
+      script: log4j_scanner.sh "{{ Java_Option }}"
+      register: script_out
+      
+    - name: script output 
+      debug:
+        msg: "{{ script_out.stdout.split('\n') }}"
